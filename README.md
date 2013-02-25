@@ -9,15 +9,16 @@ Installation
   composer require phpfluent/cachebundle
 
 Update the settings.yml file
-
+  ```php
   services:
       cache:
           class: Doctrine\Common\Cache\ApcCache
+  ```
 
 Register the bundle
-
-  %/app/AppKernel.php
+ ```php
   <?php
+  //%/app/AppKernel.php
 
   $bundles = array(
 	new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
@@ -29,10 +30,11 @@ Register the bundle
 	 */
 	new PHPFluent\Bundle\CacheBundle\CacheBundle(),
   );
-
+  ```
 Call it from your code
-
+  ```php
   $cache = $this->get('phpfluent_cache');
 
   $cache['foo'] = 'bar'; //Caching
   echo $cache['foo'];//Retrieving from the cache
+  ```
