@@ -1,0 +1,5 @@
+<services>
+    <service id="phpfluent_cache" class="PHPFluent/Cache">
+        <argument type="service" id="cache" />
+    </service>
+</services>

@@ -1,0 +1,32 @@
+{
+    "name": "phpfluent\/cachebundle",
+    "description": "A fluent cache bundle for Symfony 2.",
+    "version": "0.1",
+    "type": "symfony-bundle",
+    "time": "2013-02-24 21:00:00",
+    "keywords": ["symfony", "development", "bundle", "cache"],
+    "homepage": "http:\/\/github.com/PHPFluent/CacheBundle",
+    "license": "New BSD",
+    "authors": [
+        {
+            "name": "Kinn Coelho Julião",
+            "email": "kinncj@gmail.com"
+        },
+        {
+            "name": "Henrique Moody",
+            "email": "henriquemoody@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "PHPFluent\\Bundle\\CacheBundle": "src\/"
+        }
+    },
+    "require": {
+        "php": ">=5.3",
+        "symfony/framework-bundle": "2.*",
+        "symfony/symfony": "2.*",
+        "phpfluent/cache": "dev-master"
+    },
+    "target-dir": "PHPFluent/Bundle/CacheBundle"
+}
