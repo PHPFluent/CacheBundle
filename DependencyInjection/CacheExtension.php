@@ -26,9 +26,9 @@ class CacheExtension extends Extension
         $loader->load('services.xml');
 
         if (!$container->hasParameter('cache')) {
-        throw new \InvalidArgumentException(
-            'The "cache" parameter must be set'
-        );
-    
+            throw new \InvalidArgumentException(
+                'The "cache" parameter must be set'
+            );
+        }
     }
 }
