@@ -19,7 +19,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "PHPFluent\\Bundle\\CacheBundle": "src\/"
+            "PHPFluent\\Bundle\\CacheBundle": "\/"
         }
     },
     "require": {
